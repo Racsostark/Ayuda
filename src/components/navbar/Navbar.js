@@ -58,7 +58,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' :  'nav-menu'}>
               <li className='nav-items'>
                   <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                      Inicio
+                      Home
                   </Link>
               </li>
               <li className='nav-items' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
