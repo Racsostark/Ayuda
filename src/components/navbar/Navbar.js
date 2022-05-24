@@ -50,7 +50,7 @@ function Navbar() {
       <>
       <nav className='navbar'>
           <Link to='/image/Prioritypet-logo.png' className='navbar-logo'>
-              Priorytypet
+              Priority Pet
           </Link>
           <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
