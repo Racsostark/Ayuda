@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Download() {
+export default function Download() {
   return (
     <>
-        <h1 className='Download'>Descarga</h1>
+        <h1 className='download'>Descarga</h1>
     </>
   )
 }
-
-export default Download

@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Support() {
+export default function Support() {
   return (
     <>
-        <h1 className='Support'>Soporte</h1>
+        <h1 className='support'>Soporte</h1>
     </>
   )
 }
-
-export default Support

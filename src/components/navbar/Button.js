@@ -4,7 +4,7 @@ import './Button.css'
 
 export default function Button() {
   return (
-    <Link to='/'>
+    <Link to='/Login'>
         <button className='btn'>Acceso</button>
     </Link>
   )

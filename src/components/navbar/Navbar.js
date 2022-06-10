@@ -2,14 +2,12 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import Button from './Button';
 import Dropdown from './Dropdown';
-import DropdownContent from './DropdownContent';
 import './Navbar.css';
 
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
-    const [dropdown2, setDropdown2] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -30,26 +28,11 @@ function Navbar() {
         }
       };
 
-
-      const onMouseEnter2 = () => {
-        if (window.innerWidth < 960) {
-          setDropdown2(false);
-        } else {
-          setDropdown2(true);
-        }
-    };
-      const onMouseLeave2 = () => {
-        if (window.innerWidth < 960) {
-          setDropdown2(false);
-        } else {
-          setDropdown2(false);
-        }
-      };
-     
+      
   return (
-      <>
+      
       <nav className='navbar'>
-          <Link to='/image/Prioritypet-logo.png' className='navbar-logo'>
+          <Link to='/' className='navbar-logo'>
               Priority Pet
           </Link>
           <div className='menu-icon' onClick={handleClick}>
@@ -61,25 +44,25 @@ function Navbar() {
                       Home
                   </Link>
               </li>
-              <li className='nav-items' onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
-                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                      Contenido <i className='fas fa-caret-down'/>
-                  </Link>
-                  {dropdown2 && <DropdownContent />}
-              </li>
               <li className='nav-items' onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                      Soporte <i className='fas fa-caret-down'/>
+                  <Link to='/content' className='nav-links' onClick={closeMobileMenu}>
+                      Contenido <i className='fas fa-caret-down'/>
                   </Link>
                   {dropdown && <Dropdown />}
               </li>
               <li className='nav-items'>
-                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                  <Link to='/support' className='nav-links' onClick={closeMobileMenu}>
+                      Soporte <i className='fas fa-caret-down'/>
+                  </Link>
+
+              </li>
+              <li className='nav-items'>
+                  <Link to='https://prioritypet.club/' className='nav-links' onClick={closeMobileMenu}>
                       web
                   </Link>
               </li>
               <li className='nav-items'>
-                  <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                  <Link to='/download' className='nav-links' onClick={closeMobileMenu}>
                       Descarga
                   </Link>
               </li>
@@ -87,7 +70,7 @@ function Navbar() {
           </ul>
           <Button />
       </nav>
-      </>
+      
   )
 }
 

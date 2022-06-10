@@ -1,7 +1,7 @@
 import React, { useState }from 'react'
 import { Link } from 'react-router-dom'
 import './Dropdown.css'
-import { ItemsSuport, ItemsContent } from './MenuItems';
+import { ItemsContent } from './MenuItems';
 
 
 export default function Dropdown() {
@@ -16,7 +16,7 @@ export default function Dropdown() {
         onClick={handleClick}
         className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
       >
-        {ItemsSupport.map((item, index) => {
+        {ItemsContent.map((item, index) => {
           return (
             <li key={index}>
               <Link

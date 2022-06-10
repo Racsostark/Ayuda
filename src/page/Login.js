@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Login() {
+export default function Login() {
   return (
     <>
-        <h1 className='Login'>Inicio de Sesión</h1>
+        <h1 className='login'>Inicio de Sesión</h1>
     </>
   )
 }
-
-export default Login

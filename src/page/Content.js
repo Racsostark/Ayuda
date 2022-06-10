@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Content() {
+export default function Content() {
   return (
     <>
-        <h1 className='Content'>Contenido</h1>
+        <h1 className='content'>Contenido</h1>
     </>
   )
 }
-
-export default Content

@@ -4,26 +4,26 @@ export const ItemsSupport = [
     cName: 'Dropdown-link'
     },
     {title: 'Reporte de contenido',
-    path: '/ReportC',
+    path: '/reportC',
     cName: 'Dropdown-link'
     },
     {title: 'Soporte Tecnico',
-    path: '/Suport',
+    path: '/suport',
     cName: 'Dropdown-link'
     },
     {title: 'Comunidad',
-    path: '/Foro',
+    path: '/foro',
     cName: 'Dropdown-link'
     }
 ]
 
 export const ItemsContent = [
     {title: 'Cuenta',
-    path: '/Contenido',
+    path: '/content',
     cName: 'Dropdown-link'
     },
     {title: 'Mascota',
-    path: '/Contenido',
+    path: '/content',
     cName: 'Dropdown-link'
     },
    
