@@ -57,14 +57,9 @@ function Navbar() {
 
               </li>
               <li className='nav-items'>
-                  <Link to='https://prioritypet.club/' className='nav-links' onClick={closeMobileMenu}>
+                  <a href='https://prioritypet.club/' className='nav-links' onClick={closeMobileMenu}>
                       web
-                  </Link>
-              </li>
-              <li className='nav-items'>
-                  <Link to='/download' className='nav-links' onClick={closeMobileMenu}>
-                      Descarga
-                  </Link>
+                  </a>
               </li>
               
           </ul>

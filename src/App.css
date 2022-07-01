@@ -4,6 +4,18 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
   }
+
+  :root{
+    --primary: #674eec;
+    --main-font: sans-serif;
+    --font-size: 16px;
+    --main-color: #f7df1e;
+    --second-color: #fb7906;
+    --main-modal-color: rgba(247, 222, 30, 0.85);
+    --second-modal-color: rgba(34, 34, 34, 0.85);
+    --container-width: 1200px;
+
+  }
   
   .home,
   .content,
@@ -19,11 +31,11 @@
   }
   
   .home {
-    background-color: blueviolet;
+    background-color: #F5F1ED;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
+    color: blueviolet;
     font-size: 100px;
   }
   
@@ -37,7 +49,7 @@
   }
   
   .download {
-    background-color: blueviolet;
+    background-color: #F5F1ED;
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -63,3 +75,30 @@
     font-size: 100px;
   }
   
+  /*Boton pagina dowload*/
+
+
+.btnd{
+    padding: 32px 80px;
+    border-radius: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--primary);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.btnd:hover{
+    padding: 30px 80px;
+    transition: all 0.3s ease-out;
+    background-color: #fb7906;
+    color: #fff;
+    border-radius: 2.5rem;
+    border: 2px solid var(--primary);
+
+}
+
+/* *********Sidebar********** */
+
